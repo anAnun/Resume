@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <style>
+      body {
+        display: grid;
+        margin: 0px;
+        font-family: Roboto;
+        font-size: 1.1em;
+        height: 100vh;
+
+        grid-template-columns: 30% 1fr;
+      }
+
+      aside {
+        height: 100%;
+        background-color: #373D48;
+        color: white;
+      }
+
+      aside h1 {
+        padding-left: 2rem;
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+      }
+
+      aside h2 {
+        padding: 0.5rem 2rem;
+        margin-top: 2rem;
+        background-color: #252932;
+      }
+
+      aside div {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      main {
+        padding-left: 2em;
+        margin-right: 3em;
+      }
+
+      main .experience {
+        display: grid;
+        grid-template-columns: auto 1fr;
+      }
+
+      .title {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      .company {
+        margin-top: 0.3em;
+      }
+
+      .details ul {
+        padding-left: 0em;
+      }
+
+      .details li {
+        padding-bottom: 1em;
+        line-height: 1.6em;
+        font-size: 14px;
+      }
+
+      .dates {
+        padding-top: 0.2em;
+        padding-right: 1em;
+      }
+
+      .top-line {
+          margin-bottom: -22px;
+      }
+
+      .bottom-line {
+          margin-top: -20px;
+      }
+
+      .s {
+          line-height: .55em;
+      }
+
+      .details {
+          grid-column-end: -1;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <aside>
+      <h1>Allan Yeznaian</h1>
+      <div>Web Developer</div>
+      <div>(213) 700-3223</div>
+      <div>allanyeznaian@gmail.com</div>
+      <div>www.github.com/anAnun</div>
+      <div>www.linkedin.com/in/allan-yeznaian</div>
+      
+      <h2>Skills</h2>
+      <div class='s'>React</div>
+      <div class='s'>jQuery</div>
+      <div class='s'>Bootstrap 3.0</div>
+      <div class='s'>C#</div>
+      <div class='s'>HTML</div>
+      <div class='s'>ASP.NET</div>
+      <div class='s'>CSS3</div>
+      <div class='s'>Chrome Dev Tools</div>
+      <div class='s'>AJAX</div>
+      <div class='s'>JavaScript</div>
+      <div class='s'>Git/TFS</div>
+      <div class='s'>Agile/Scrum</div>
+      <div class='s'>WebAPI 2.x</div>
+
+      <h2>Software</h2>
+      <div class='s'>Visual Studio 2017</div>
+      <div class='s'>Visual Studio Code</div>
+      <div class='s'>SQL Server 2016</div>
+
+      <h2>Other</h2>
+      <div class='s'>Fluent Armenian</div>
+      <div class='s'>Music Composer</div>
+      
+
+    </aside>
+
+    <main>
+      <hr class='top-line'>
+        <h1>Experience</h1>
+      <hr class='bottom-line'>
+      <div class='experience'>
+        <div class='dates'>1/2018 -<br> 6/2018</div>
+        <div>
+          <div class='title'>Full Stack .NET Developer</div>
+          <div class='company'>Recruit Hub</div>
+        </div>
+        
+        <div class='details'>
+          <ul>
+            <li>RecruitHub is a professional online platform for high school athletes to be discovered by recruiting coaches from national colleges and universities. The platform is designed to help both coaches and players navigate the subtle rules governing their communications during the high-school athlete recruiting process. RecruitHub enables athletes from all backgrounds to be fairly recruited, without having to buy into the pay-for-play system that exists today.</li>
+            <li>I am a full-stack developer who helped build this app using React 16 and ECMAScript 2015 (ES6). The server was built using ASP.NET Web API 2 on .NET Framework 4.6. WebSockets using SignalR were used to publish real-time updates to browser clients. Third-party authentication via Google was integrated using OAuth 2. SQL Server 2016 was used for data storage, including the new JSON reading and writing functionality.</li>
+            <li>Personally implemented the site-wide tagging system, which allows users to add personalized tags to other users and posts on the site, including the ability to make tags public or private. Built a reusbale React component to allow other developers to add bookmarking functionality to their own components. Also, implemented the site's AWS S3 upload functionality which comprised both the Web API controller as well as the back-end database code used to manage user-uploaded content. Additionally, I built several of the site's data entry and editing forms, including validation logic, which consisted of React components, Web API controllers, and services in the site's data access layer.</li>
+          </ul>
+        </div>
+
+        <div class='dates'>1/2012 - <br>12/2017</div>
+        <div>
+          <div class='title'>Re-seller</div>
+          <div class='company'>eBay</div>
+        </div>
+        
+        <div class='details'>
+          <ul>
+            <li>Studied the market for in demand vintage items and video games to identify purchasing sources. Re-seller of DVDs, electronics and musical instruments. Managed inventory, financing, marketing, for proprietary e-commerce business. Actively pursued arbitrage tactics to supply existing inventory.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
