@@ -63,7 +63,7 @@
       .details li {
         padding-bottom: 1em;
         line-height: 1.6em;
-        font-size: 14px;
+        font-size: 16px;
       }
 
       .dates {
@@ -101,25 +101,25 @@
       
       <h2>Skills</h2>
       <div class='s'>React</div>
-      <div class='s'>jQuery</div>
-      <div class='s'>Bootstrap 3.0</div>
       <div class='s'>C#</div>
-      <div class='s'>HTML</div>
       <div class='s'>ASP.NET</div>
-      <div class='s'>CSS3</div>
-      <div class='s'>Chrome Dev Tools</div>
-      <div class='s'>AJAX</div>
-      <div class='s'>JavaScript</div>
-      <div class='s'>Git/TFS</div>
-      <div class='s'>Agile/Scrum</div>
       <div class='s'>WebAPI 2.x</div>
+      <div class='s'>jQuery</div>
+      <div class='s'>JavaScript</div>
+      <div class='s'>AJAX</div>
+      <div class='s'>Git/TFS</div>
+      <div class='s'>Bootstrap 3.0</div>
+      <div class='s'>HTML</div>
+      <div class='s'>CSS3</div>
+      <div class='s'>Agile/Scrum</div>
+      <div class='s'>Chrome Dev Tools</div>
 
       <h2>Software</h2>
       <div class='s'>Visual Studio 2017</div>
       <div class='s'>Visual Studio Code</div>
       <div class='s'>SQL Server 2016</div>
 
-      <h2>Other</h2>
+      <h2>Languages/Hobbies</h2>
       <div class='s'>Fluent Armenian</div>
       <div class='s'>Music Composer</div>
       
@@ -139,13 +139,15 @@
         
         <div class='details'>
           <ul>
-            <li>RecruitHub is a professional online platform for high school athletes to be discovered by recruiting coaches from national colleges and universities. The platform is designed to help both coaches and players navigate the subtle rules governing their communications during the high-school athlete recruiting process. RecruitHub enables athletes from all backgrounds to be fairly recruited, without having to buy into the pay-for-play system that exists today.</li>
-            <li>I am a full-stack developer who helped build this app using React 16 and ECMAScript 2015 (ES6). The server was built using ASP.NET Web API 2 on .NET Framework 4.6. WebSockets using SignalR were used to publish real-time updates to browser clients. Third-party authentication via Google was integrated using OAuth 2. SQL Server 2016 was used for data storage, including the new JSON reading and writing functionality.</li>
-            <li>Personally implemented the site-wide tagging system, which allows users to add personalized tags to other users and posts on the site, including the ability to make tags public or private. Built a reusbale React component to allow other developers to add bookmarking functionality to their own components. Also, implemented the site's AWS S3 upload functionality which comprised both the Web API controller as well as the back-end database code used to manage user-uploaded content. Additionally, I built several of the site's data entry and editing forms, including validation logic, which consisted of React components, Web API controllers, and services in the site's data access layer.</li>
+            <li>Personally implemented the site-wide tagging system, which allows users to add personalized tags to other users and posts on the site, including the ability to make tags public or private. </li>
+            <li>Built a reusable React component to allow other developers to add bookmarking functionality to their own components. </li>
+            <li>Implemented the site's AWS S3 upload functionality which comprised both the Web API controller as well as the back-end database code used to manage user-uploaded content. </li>
+            <li>Additionally, I built several of the site's data entry and editing forms, including validation logic, which consisted of React components, Web API controllers, and services in the site's data access layer.</li>
+            <li>RecruitHub is an online platform similar to for highschool athletes to be discovered by recruiting coaches from colleges and universities. It is similar to Facebook and was built using React 16 and ES6 for the client side, ASP.NET Web API on the server side, and SQL for the back back-end.</li>
           </ul>
         </div>
 
-        <div class='dates'>1/2012 - <br>12/2017</div>
+        <div class='dates'>2012 - <br>2017</div>
         <div>
           <div class='title'>Re-seller</div>
           <div class='company'>eBay</div>
@@ -158,5 +160,41 @@
         </div>
       </div>
     </main>
-  </body>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 </html>
